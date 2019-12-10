@@ -22,14 +22,14 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:textSize="20sp"
-        android:hint="Enter no"/>
+        android:hint="Enter first no."/>
     <EditText
         android:id="@+id/etsecond"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:textSize="20sp"
-        android:hint="Enter no"/>
+        android:hint="Enter second no."/>
 
     <Button
         android:id="@+id/btncalc"
@@ -38,6 +38,13 @@
         android:text="Calculate"
         android:textSize="20sp"
         />
+    <TextView
+        android:id="@+id/tvSwapResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"/>
 
 
 
