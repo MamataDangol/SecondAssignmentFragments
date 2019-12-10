@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="20dp"
+    tools:context=".Fragments.AreaOfCircleFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area Of Circle"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/etnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Enter no"/>
+
+    <Button
+        android:id="@+id/btncalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:textSize="20sp"
+        />
+
+
+
+
+</LinearLayout>
