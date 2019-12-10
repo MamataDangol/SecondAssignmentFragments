@@ -14,7 +14,7 @@ import com.mamata.secondassignmentfragments.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SwappingFragment extends Fragment {
+public class SwappingFragment extends Fragment implements View.OnClickListener{
 
 
     public SwappingFragment() {
@@ -29,4 +29,8 @@ public class SwappingFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_swapping, container, false);
     }
 
+    @Override
+    public void onClick(View v) {
+
+    }
 }

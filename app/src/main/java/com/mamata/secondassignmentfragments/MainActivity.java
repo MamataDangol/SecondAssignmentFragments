@@ -11,6 +11,7 @@ import android.widget.Switch;
 
 import com.mamata.secondassignmentfragments.Fragments.AreaOfCircleFragment;
 import com.mamata.secondassignmentfragments.Fragments.ArmstrongFragment;
+import com.mamata.secondassignmentfragments.Fragments.AutomorphicFragment;
 import com.mamata.secondassignmentfragments.Fragments.PalindromeFragment;
 import com.mamata.secondassignmentfragments.Fragments.SimpleInterestFragment;
 
@@ -67,6 +68,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnarmstrong:
                 ArmstrongFragment armstrongFragment = new ArmstrongFragment();
                 fragmentTransaction.replace(R.id.fragmentContainer,armstrongFragment);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.btnautomorphic:
+                AutomorphicFragment automorphicFragment = new AutomorphicFragment();
+                fragmentTransaction.replace(R.id.fragmentContainer,automorphicFragment);
                 fragmentTransaction.commit();
                 break;
 
