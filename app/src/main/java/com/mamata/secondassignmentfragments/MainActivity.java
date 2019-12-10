@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.Switch;
 
 import com.mamata.secondassignmentfragments.Fragments.AreaOfCircleFragment;
+import com.mamata.secondassignmentfragments.Fragments.ArmstrongFragment;
 import com.mamata.secondassignmentfragments.Fragments.PalindromeFragment;
 import com.mamata.secondassignmentfragments.Fragments.SimpleInterestFragment;
 
@@ -60,6 +61,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnsimpleinterest:
                 SimpleInterestFragment simpleInterestFragment = new SimpleInterestFragment();
                 fragmentTransaction.replace(R.id.fragmentContainer,simpleInterestFragment);
+                fragmentTransaction.commit();
+                break;
+
+            case R.id.btnarmstrong:
+                ArmstrongFragment armstrongFragment = new ArmstrongFragment();
+                fragmentTransaction.replace(R.id.fragmentContainer,armstrongFragment);
                 fragmentTransaction.commit();
                 break;
 
