@@ -14,6 +14,7 @@ import com.mamata.secondassignmentfragments.Fragments.ArmstrongFragment;
 import com.mamata.secondassignmentfragments.Fragments.AutomorphicFragment;
 import com.mamata.secondassignmentfragments.Fragments.PalindromeFragment;
 import com.mamata.secondassignmentfragments.Fragments.SimpleInterestFragment;
+import com.mamata.secondassignmentfragments.Fragments.SwappingFragment;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btnCircle, btnPalindrome, btnSimpleInterest, btnArmstrong, btnSwapping, btnAutomorphic;
@@ -76,7 +77,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 fragmentTransaction.replace(R.id.fragmentContainer,automorphicFragment);
                 fragmentTransaction.commit();
                 break;
-
+            case R.id.btnswappig:
+                SwappingFragment swappingFragment = new SwappingFragment();
+                fragmentTransaction.replace(R.id.fragmentContainer,swappingFragment);
+                fragmentTransaction.commit();
+                break;
 
 
         }

@@ -38,6 +38,7 @@ public class SwappingFragment extends Fragment implements View.OnClickListener{
         etfirst = view.findViewById(R.id.etfirst);
         etsecond = view.findViewById(R.id.etsecond);
         btncalc = view.findViewById(R.id.btncalc);
+        tvSwapResult = view.findViewById(R.id.tvSwapResult);
         btncalc.setOnClickListener(this);
         return view;
 
