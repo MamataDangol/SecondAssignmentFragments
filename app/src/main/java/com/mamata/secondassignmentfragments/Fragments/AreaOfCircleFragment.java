@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,10 @@ public class AreaOfCircleFragment extends Fragment implements View.OnClickListen
 
     @Override
     public void onClick(View v) {
+        if (TextUtils.isEmpty(etnum.getText())) {
+            etnum.setError("Please input any number.");
+            return;
+        }
         float radius, result;
         radius = Float.parseFloat(etnum.getText().toString());
         result = (radius * radius * 22)/7;
