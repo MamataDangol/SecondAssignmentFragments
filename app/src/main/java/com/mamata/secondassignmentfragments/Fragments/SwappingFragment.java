@@ -51,7 +51,7 @@ public class SwappingFragment extends Fragment implements View.OnClickListener{
             etfirst.setError("Please input any number.");
             return;
         } else if (TextUtils.isEmpty(etsecond.getText())) {
-            etsecond.setError("Please input any number");
+            etsecond.setError("Please input number");
             return;}
 
         int first, second, temp, bfirst, bsecond;
